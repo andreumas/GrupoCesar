@@ -2,15 +2,21 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative" rel="stylesheet">
     <title></title>
   </head>
   <body>
-    <form action="EntregableBatalla.js" method="post">
-
-      <label for="texto">Introduce tu texto:</label>  <input type="text" id="texto" name="texto" value="">
-      <br><br>
-      <input type="submit" name="envio" value="Enviar">
+   <div class="contenedor">
+   <h1>Código Cesar</h1>
+   <img src="img/JulioCesarCortado.png" alt="ImgJulioCesar">
+    <form>
+      <label for="texto">Encripta tu mensaje:</label>  <input type="text" id="texto" name="texto" autofocus>
+      
+      <input type="button" id="boton" name="envio" value="Enviar" onclick="cabecera()">
     </form>
-    <h3>La palabra Encriptada es: <span id="pencript"></span></h3>
+    <h3>La palabra encriptada es: <span id="pencript">Hola vale como estamos?</span></h3>
+    <script type="text/javascript" src="entregableBatalla.js"></script>
+    </div>
   </body>
 </html>
