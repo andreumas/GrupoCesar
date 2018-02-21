@@ -31,13 +31,16 @@ function encriptar(palabraArray){
 
   mensajeCompleto=palabraArray.concat(mensajeArray);
   mensajeCompleto=encriptadoGeneral(3,"D",mensajeCompleto);
-  //mensajeCompleto=encriptadoGeneral(7,"D",mensajeCompleto);
-  //mensajeCompleto=encriptadoGeneral(8,"A",mensajeCompleto);
-  /*for(let i=8;i<mensaje.length;i++){
+  mensajeCompleto=encriptadoGeneral(7,"D",mensajeCompleto);
+  mensajeCompleto=encriptadoGeneral(8,"A",mensajeCompleto);
+
+  for(let i=8;i<mensaje.length+8;i++){
+    console.log(mensaje.charAt(i-8)==" ");
+    console.log(mensaje.length);
     if(mensaje.charAt(i-8)==" "){
       mensajeCompleto[i]=" ";
     }
-  }*/
+  }
   texto.textContent=mensajeCompleto;
 }
 
